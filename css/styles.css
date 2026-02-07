@@ -1,0 +1,172 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables */
+:root {
+    --dark: #111;
+    --light: #fff;
+    --primary: #0d6efd;
+    --gray: #f5f5f5;
+    --radius: 8px;
+    --spacing: 1rem;
+}
+
+/* general */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--gray);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+/* site */
+.site {
+    background-color: var(--gray);
+}
+
+/* header */
+.site__header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background: var(--dark);
+    color: var(--light);
+    padding: 1rem;
+    text-align: center;
+}
+
+/* nav */
+.site__nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: var(--dark);
+    list-style: none;
+}
+
+.site__nav a {
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+.site__nav a:hover {
+    background: var(--primary);
+}
+
+/* main */
+.site__main {
+    padding: 1rem;
+}
+
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.layout__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.layout__aside {
+    background: white;
+    padding: 1rem;
+    border-radius: var(--radius);
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    align-items: stretch;
+}
+
+
+/* card */
+.news-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: var(--radius);
+}
+
+
+.news-card:hover {
+    transform: translateY(-5px);
+}
+
+.news-card__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 5px 5px;
+}
+
+
+.news-card__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.news-card__link {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-card__link:hover {
+    text-decoration: underline;
+}
+
+/* card expandible*/
+.card--expandable {
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.card__toggle {
+    display: none;
+}
+
+.card__text {
+    margin-top: 0.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.site__footer {
+    margin-top: 12rem;
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 3rem;
+}

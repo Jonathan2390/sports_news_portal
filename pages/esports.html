@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News Portal</title>
+
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/pages.css">
+</head>
+
+<body class="site">
+    <!-- Header -->
+    <header class="site__header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="../../img/newey.png">
+                    <a class="navbar-brand site__logo" href="../index.html">Sports News Portal</a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/f1.html">F1</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/futbol.html">Fútbol</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/nba.html">NBA</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <main class="site__main">
+
+        <section class="layout">
+
+            <section class="layout__content">
+                <article class="card card--expandable">
+                    <h2 class="card__title">
+                        México avanza en deportes electrónicos
+                    </h2>
+                    <!-- Toggle -->
+                    <input type="checkbox" id="esports" class="card__toggle">
+                    <!-- TTexto -->
+                    <p class="card__text">
+                        En los últimos años, los deportes electrónicos, o eSports, han experimentado un crecimiento
+                        notable en México, consolidándose como una industria en expansión que atrae a millones de
+                        aficionados y genera ingresos significativos. Este fenómeno refleja una tendencia global, pero
+                        con particularidades que destacan en el contexto mexicano.
+
+                        Según datos de Statista, el mercado de eSports en México alcanzó un valor de 1,152 millones de
+                        dólares en 2022. Además, se proyecta que para 2024 supere los 1,340 millones de dólares. Este
+                        crecimiento se atribuye a la creciente popularidad de los videojuegos y al aumento de la
+                        audiencia que sigue competencias profesionales.
+
+                    <h3>Aumento de la audiencia y participación</h3>
+                    El incremento en la disponibilidad de plataformas de streaming como Twitch y YouTube Gaming ha
+                    sido crucial para el crecimiento del mercado. Estas plataformas no solo facilitan la transmisión
+                    de torneos y partidas, sino que también permiten a los jugadores profesionales y creadores de
+                    contenido conectar con una audiencia masiva, ampliando el alcance de los eSports en el país.
+                    Según un informe de Newzoo, México ocupa el tercer lugar en consumo de contenido relacionado con
+                    videojuegos en América Latina, sólo detrás de Brasil y Argentina.
+
+                    Este auge ha ido de la mano con el incremento de las apuestas deportivas. Más a más, este
+                    mercado de apuestas deportivas en los esports crece a un ritmo vertiginoso. Desde las
+                    tradicionales apuestas al ganador de un partido hasta las más complejas, como predecir el número
+                    de asesinatos en una partida o el tiempo que tardará un equipo en destruir una estructura, la
+                    variedad de opciones es casi ilimitada. Además, la combinación de la inmediatez de las partidas
+                    y la emoción de apostar ha hecho que los esports se conviertan en una opción muy atractiva para
+                    un jugador que quiere apostar. Busca y encuentra las mejores casas de apuestas deportivas aquí.
+
+                    <h3>Jugadores de eSports en México</h3>
+                    México cuenta con aproximadamente 67.8 millones de jugadores de videojuegos mayores de seis
+                    años, posicionándose como el segundo país en consumo de videojuegos en América Latina. Este
+                    amplio público ha impulsado la formación de comunidades dedicadas a los eSports, aumentando la
+                    participación tanto de jugadores como de espectadores en eventos y torneos.
+
+                    El público mexicano muestra una preferencia marcada por títulos como Fortnite, FIFA, y Call of
+                    Duty, los cuales destacan entre los más jugados y vistos. Esta diversidad de géneros ha
+                    permitido que los eSports lleguen a audiencias variadas, desde aficionados al fútbol hasta
+                    seguidores de juegos de estrategia y acción. Según un estudio realizado por The Competitive
+                    Intelligence Unit (CIU), un 25% de los jugadores mexicanos sigue regularmente competencias de
+                    eSports, lo que demuestra el fuerte interés por esta modalidad.
+
+                    Además, la accesibilidad de los videojuegos en dispositivos móviles ha sido otro motor de
+                    crecimiento. Juegos como Free Fire y PUBG Mobile han democratizado la participación en los
+                    eSports, atrayendo a jugadores de diferentes contextos sociales y económicos. Esto ha creado una
+                    base sólida de aficionados. Además, ha impulsado la formación de equipos amateur en todo el
+                    país, muchos de los cuales han dado el salto a competencias profesionales.
+                    </p>
+                    <!-- IMAGEN SEPARADA -->
+                    <img src="../img/esports.jpg" alt="esports" class="card__media">
+
+                    <label for="esports" class="card__btn">
+                    </label>
+                </article>
+                <aside class="layout__aside">
+                    <h3>Populares</h3>
+                    <ul>
+                        <li><a href="../pages/f1/calendario.html">Calendario F1 2026</a></li>
+                        <li><a href="../pages/futbol/rmbar.html"> Real Madrid vs Barcelona por La Liga</a></li>
+                        <li><a href="../pages/nba.html">NBA</a></li>
+                    </ul>
+                </aside>
+            </section>
+    </main>
+</body>
+<!-- footer -->
+<footer class="site__footer">
+    <p>© 2026 Sports News Portal - Todos los derechos reservados</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>
