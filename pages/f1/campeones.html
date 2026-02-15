@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports News Portal</title>
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body class="site">
+    <!-- Header -->
+    <header class="site__header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a href="../../img/newey.png">
+                    <a class="navbar-brand site__logo" href="../../index.html">Sports News Portal</a>
+                    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="menu" class="collapse navbar-collapse">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../pages/f1.html">F1</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../pages/futbol.html">Fútbol</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../pages/nba.html">NBA</a></li>
+                            <li class="nav-item"><a class="nav-link" href="../../pages/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <main class="site__main">
+
+        <section class="layout">
+
+            <section class="layout__content">
+                <article class="card card--expandable">
+                    <h2 class="card__title">
+                        Todos los campeones históricos de la Fórmula 1: los pilotos más laureados de la historia
+                    </h2>
+                    <!-- Toggle -->
+                    <input type="checkbox" id="campeonesf1" class="card__toggle">
+                    <!-- TEXTO (solo texto aquí) -->
+                    <p class="card__text">
+                        Los campeones históricos más laureados de la Fórmula 1 son Michael Schumacher y Lewis Hamilton,
+                        ambos con 7 títulos mundiales cada uno Diario AS. Les siguen Juan Manuel Fangio (5), Alain Prost
+                        y Sebastian Vettel, ambos con 4, consolidándose como las máximas leyendas del automovilismo
+                        DAZN.<br>
+                        Aquí están los pilotos con más campeonatos mundiales:<br><br>
+                        7 Títulos: Michael Schumacher, Lewis Hamilton Diario AS.<br>
+                        5 Títulos: Juan Manuel Fangio Diario AS.<br>
+                        4 Títulos: Alain Prost, Sebastian Vettel Diario AS.<br>
+                        3 Títulos: Ayrton Senna, Niki Lauda, Jackie Stewart, Nelson Piquet, Jack Brabham.<br>
+                        2 Títulos: Max Verstappen, Fernando Alonso, Emerson Fittipaldi, Mika Häkkinen, Jim Clark, Graham
+                        Hill, Alberto Ascari.<br><br>
+                        Datos destacados:
+                        Max Verstappen ha ganado cuatro campeonatos consecutivos (2021-2024), dominando la era moderna
+                        con Red Bull Red Bull.<br><br>
+                        Fernando Alonso es el único español bicampeón (2005, 2006) DAZN.<br>
+                        Lewis Hamilton ostenta el récord de más victorias en la historia (105* al inicio de 2025) ESPN
+                        México.
+                    </p>
+                    <label for="campeonesf1" class="card__btn">
+                    </label>
+                </article>
+
+
+                <aside class="layout__aside">
+                    <h3>Populares</h3>
+                    <ul>
+                        <li><a href="../f1/calendario.html">Calendario F1 2026</a></li>
+                        <li><a href="../f1/nueva_era.html">Autos F1 nueva era</a></li>
+                        <li><a href="../f1/campeones.html">Campeones históricos</a></li>
+                    </ul>
+                </aside>
+            </section>
+    </main>
+</body>
+<!-- footer -->
+<footer class="site__footer">
+    <p>© 2026 Sports News Portal - Todos los derechos reservados</p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

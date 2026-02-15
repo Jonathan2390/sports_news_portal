@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <!-- Bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body class="site">
+    <!-- Header -->
+    <header class="site__header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand site__logo" href="../../index.html">Sports News Portal</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="menu" class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../../index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../pages/f1.html">F1</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../pages/futbol.html">Fútbol</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../pages/nba.html">NBA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="site__main">
+        <section class="layout">
+            <section class="layout__content">
+                <article class="card card--expandable">
+                    <h2 class="card__title">
+                        Así se jugarán los playoffs de la NBA
+                    </h2>
+                    <!-- Toggle -->
+                    <input type="checkbox" id="playoff" class="card__toggle">
+                    <!-- Texto -->
+                    <p class="card__text">
+                    </p>
+                    <img src="../../img/playoff_.jpg" alt="playoff" class="card__media">
+                    <label for="playoff" class="card__btn">
+                    </label>
+                </article>
+            </section>
+        </section>
+    </main>
+    <footer class="site__footer">
+        <p>© 2026 Sports News Portal - Todos los derechos reservados</p>
+    </footer>
+</body>
+
+</html>
