@@ -10,32 +10,54 @@
     --dark: #111;
     --light: #fff;
     --primary: #0d6efd;
+<<<<<<< HEAD
     --gray: #f4f4f4;
+=======
+    --gray: #f5f5f5;
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
     --radius: 8px;
     --spacing: 1rem;
 }
 
+<<<<<<< HEAD
 /* general*/
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--gray);
+=======
+/* general */
+body {
+    font-family: Arial, sans-serif;
+    background: var(--gray);
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
     line-height: 1.6;
 }
 
 img {
+<<<<<<< HEAD
     width: 100%;
     display: block;
     border-radius: var(--radius);
+=======
+    max-width: 100%;
+    display: block;
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 }
 
 h2 {
     font-size: 32px;
+<<<<<<< HEAD
     font-weight: bold;
+=======
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 }
 
 h3 {
     font-size: 22px;
+<<<<<<< HEAD
     font-weight: bold;
+=======
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 }
 
 p {
@@ -43,17 +65,24 @@ p {
     hyphens: auto;
 }
 
+<<<<<<< HEAD
 a {
     text-decoration: none;
     color: inherit;
 }
 
+=======
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 /* site */
 .site {
     background-color: var(--gray);
 }
 
+<<<<<<< HEAD
 /* header nav */
+=======
+/* header */
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 .site__header {
     position: sticky;
     top: 0;
@@ -64,16 +93,29 @@ a {
     text-align: center;
 }
 
+<<<<<<< HEAD
+=======
+/* nav */
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 .site__nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+<<<<<<< HEAD
     background: #222;
+=======
+    background: var(--dark);
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
     list-style: none;
 }
 
 .site__nav a {
+<<<<<<< HEAD
     color: var(--light);
+=======
+    color: white;
+    text-decoration: none;
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
     padding: 1rem;
     display: block;
 }
@@ -82,11 +124,17 @@ a {
     background: var(--primary);
 }
 
+<<<<<<< HEAD
 /* main layaout*/
 .site__main {
     padding: 2rem 1rem;
     max-width: 1200px;
     margin: auto;
+=======
+/* main */
+.site__main {
+    padding: 1rem;
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 }
 
 .layout {
@@ -102,6 +150,7 @@ a {
 }
 
 .layout__aside {
+<<<<<<< HEAD
     background-color: var(--light);
     padding: 1.5rem;
     border-radius: var(--radius);
@@ -117,6 +166,13 @@ a {
 }
 
 /* news grid */
+=======
+    background: white;
+    padding: 1rem;
+    border-radius: var(--radius);
+}
+
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 .news-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -124,6 +180,7 @@ a {
     align-items: stretch;
 }
 
+<<<<<<< HEAD
 /* card base */
 .card,
 .news-card {
@@ -136,10 +193,23 @@ a {
     height: 100%;
 }
 
+=======
+
+/* card */
+.news-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-radius: var(--radius);
+}
+
+
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 .news-card:hover {
     transform: translateY(-5px);
 }
 
+<<<<<<< HEAD
 /* card content */
 .card__title {
     margin-bottom: 1rem;
@@ -156,6 +226,15 @@ a {
     border-radius: var(--radius);
     transition: all 0.4s ease;
 }
+=======
+.news-card__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px 5px 5px 5px;
+}
+
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 
 .news-card__content {
     flex-grow: 1;
@@ -163,13 +242,35 @@ a {
     flex-direction: column;
 }
 
+<<<<<<< HEAD
 /* card expandible*/
+=======
+
+.news-card__link {
+    color: var(--primary);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-card__link:hover {
+    text-decoration: underline;
+}
+
+/* card expandible*/
+.card--expandable {
+    position: relative;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 .card__toggle {
     display: none;
 }
 
 .card__text {
     margin-top: 0.8rem;
+<<<<<<< HEAD
     color: #333;
     display: -webkit-box;
     -webkit-line-clamp: 4;
@@ -281,4 +382,17 @@ a {
     .layout {
         grid-template-columns: 3fr 1fr;
     }
+=======
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+}
+
+.site__footer {
+    margin-top: 12rem;
+    background-color: var(--dark);
+    color: var(--light);
+    text-align: center;
+    padding: 3rem;
+>>>>>>> aed4060e466f85a2f602cb31dac9958612e6f90d
 }
